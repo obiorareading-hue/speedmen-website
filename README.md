@@ -1,47 +1,46 @@
 # Speedmen Protection Limited Website
 
-Production-ready corporate website for Speedmen Protection Limited, a private security company.
+A production-ready corporate website for **Speedmen Protection Limited**, a private security company.
 
-## Status
+## Features
 
-The full website files are prepared locally in:
+- Premium dark navy, black, gold, red and white security-company design
+- Strong shield logo concept
+- Homepage, About, Services, Compliance, Projects, Careers, Management Team and Contact sections
+- NSCDC licensed, insurance and compliance messaging
+- Personnel categories: Bronze, Silver, Gold and Platinum Officers
+- Interactive Request Security Service form
+- WhatsApp form submission
+- Testimonials and client served sections
+- Fully responsive layout for mobile, tablet and desktop
 
-`C:\Users\coone\Documents\Codex`
+## Tech Stack
 
-Because this Codex environment cannot launch local `git` or `npm` commands, use the included helper script to push the full site assets from the local machine.
-
-## Push Full Website To GitHub
-
-From the project folder, run:
-
-```bat
-push-to-github.bat
-```
-
-Or in PowerShell:
-
-```powershell
-.\push-to-github.ps1
-```
-
-This will initialize Git if needed, commit the website, and push to:
-
-`https://github.com/obiorareading-hue/speedmen-website`
+- React
+- Vite
+- CSS
+- Lucide icons
 
 ## Local Preview
 
 ```bash
+npm install
 npm run dev
 ```
 
-Then open:
-
-`http://127.0.0.1:4183/`
-
-## Cloudflare Deploy
+## Production Build
 
 ```bash
-npm install
-npx wrangler login
-npm run deploy:cloudflare:prod
+npm run build
+npm run preview
 ```
+
+## Deployment
+
+This repository is ready for deployment on Vercel.
+
+See `DEPLOYMENT.md` for launch instructions.
+
+## Important Update Before Launch
+
+Open `src/App.jsx` and replace the placeholder WhatsApp number, email and office address with Speedmen Protection Limited's final official contact details.
